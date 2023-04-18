@@ -1,0 +1,59 @@
+.order-section {
+  background: url(../../../img/bg-2.png) top center no-repeat;
+  background-size: 100%;
+}
+
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 16px;
+}
+
+
+.form__title {
+  color: #fff;
+}
+
+.form__input {
+  width: 100%;
+  padding: 18px 12px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+
+  &:focus {
+    border-color: $yellow;
+  }
+
+  &--textarea {
+    height: 150px;
+    resize: none;
+    margin-bottom: 30px;
+  }
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.form__buttons {
+  margin-top: 42px;
+}

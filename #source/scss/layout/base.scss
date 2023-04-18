@@ -1,0 +1,22 @@
+body {
+  font-family: 'Alegreya Sans', Helvetica, sans-serif;
+  font-size: $baseFontSize;
+  line-height: 1.42;
+  background: #1968B1;
+}
+
+a {
+  color: inherit;
+}
+
+.wrapper {
+  position: relative;
+  min-width: $containerWidth+20px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: $containerWidth;
+  margin: 0 auto;
+}

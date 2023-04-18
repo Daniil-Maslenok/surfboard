@@ -1,0 +1,15 @@
+body {
+  font-family: "Alegreya Sans", Helvetica, sans-serif;
+  line-height: 1.42;
+  color: #fff;
+  background: #1968B1;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}

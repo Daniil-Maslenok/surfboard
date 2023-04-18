@@ -1,0 +1,13 @@
+.hero {
+  background: url(../../../img/men.jpg) center center no-repeat;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero__desc {
+  font-size: 21px;
+  font-weight: 400;
+}

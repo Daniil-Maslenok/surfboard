@@ -1,0 +1,13 @@
+.header__logo {
+  display: inline-block;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  display: inline-block;
+}

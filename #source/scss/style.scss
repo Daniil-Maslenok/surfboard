@@ -1,0 +1,47 @@
+$containerWidth: 940px;
+$baseFontSize:18px;
+
+// colors
+$blue: #1968B1;
+$yellow: #fedb3f;
+
+// z-indexs
+$z-fixed-menu: 100;
+
+// normalize and reset settings
+@import "./layout/normalize.scss";
+@import "./layout/reset_style.scss";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+
+
+// layout
+@import "./layout/base.scss";
+
+// fixed-menu
+@import './blocks/fixed-menu.scss';
+
+
+// hero-section
+@import "./blocks/header.scss";
+
+@import "./blocks/hero.scss";
+
+@import "./blocks/advantages.scss";
+
+@import "./blocks/button.scss";
+
+// reused-section
+@import "./blocks/section.scss";
+
+// why-section
+@import "./blocks/title-info.scss";
+@import "./blocks/features.scss";
+
+// reviews-section
+@import "./blocks/reviews.scss";
+
+// order-section
+@import "./blocks/form.scss";
+@import "./blocks/radio.scss"
