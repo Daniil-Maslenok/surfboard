@@ -1,30 +1,38 @@
 $containerWidth: 940px;
-$baseFontSize:18px;
+$baseFontSize: 18px;
 
 // colors
-$blue: #1968B1;
+$blue: #1968b1;
 $yellow: #fedb3f;
+
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+$phones-plus: 390px;
 
 // z-indexs
 $z-fixed-menu: 100;
+
+// media
+@import "./layout/madia.scss";
 
 // normalize and reset settings
 @import "./layout/normalize.scss";
 @import "./layout/reset_style.scss";
 
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
 
 // layout
 @import "./layout/base.scss";
 
 // fixed-menu
-@import './blocks/fixed-menu.scss';
-
+@import "./blocks/fixed-menu.scss";
 
 // hero-section
 @import "./blocks/header.scss";
+
+@import "./blocks/burger.scss";
 
 @import "./blocks/hero.scss";
 
@@ -39,9 +47,13 @@ $z-fixed-menu: 100;
 @import "./blocks/title-info.scss";
 @import "./blocks/features.scss";
 
+// team-section
+@import "./blocks/team.scss";
+@import "./blocks/participant.scss";
+
 // reviews-section
 @import "./blocks/reviews.scss";
 
 // order-section
 @import "./blocks/form.scss";
-@import "./blocks/radio.scss"
+@import "./blocks/radio.scss";

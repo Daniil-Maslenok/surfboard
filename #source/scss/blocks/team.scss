@@ -1,0 +1,49 @@
+.team-section {
+  justify-content: flex-start;
+  padding-top: rem(65px);
+
+  @include tablets {
+    justify-content: center;
+  }
+
+  @include phones {
+    justify-content: center;
+  }
+}
+
+.team {
+  display: flex;
+
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__item {
+  flex: 1;
+  margin: 0 rem(10px);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    margin: 0 0 rem(3px) 0;
+  }
+}

@@ -1,8 +1,23 @@
-body {
-  font-family: 'Alegreya Sans', Helvetica, sans-serif;
+html {
   font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
+}
+
+body {
+  font-family: "Alegreya Sans", Helvetica, sans-serif;
   line-height: 1.42;
-  background: #1968B1;
+  background: #1968b1;
+
+  @include phones {
+    line-height: 1;
+  }
 }
 
 a {
@@ -11,12 +26,12 @@ a {
 
 .wrapper {
   position: relative;
-  min-width: $containerWidth+20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
 }

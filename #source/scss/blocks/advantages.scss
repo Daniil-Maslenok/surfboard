@@ -3,7 +3,7 @@
 }
 
 .advantages__item {
-  margin-right: 30px;
+  margin-right: rem(30px);
 
   &:last-child {
     margin-right: 0;
@@ -17,17 +17,15 @@
 }
 
 .advantage__icon {
-  //! width: 35px;
-  margin-right: 17px;
-}
-
-.advantage__icon-elem {
-  width: 35px;
+  width: rem(35px);
+  height: rem(35px);
+  margin-right: rem(17px);
+  fill: white;
 }
 
 .advantage__text {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 700;
   line-height: 1.2;
-  max-width: 90px;
+  max-width: rem(90px);
 }

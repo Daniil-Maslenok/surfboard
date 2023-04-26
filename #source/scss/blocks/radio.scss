@@ -2,20 +2,30 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 12px;
+  align-items: center;
+  margin-right: rem(12px);
 
   &--checkbox {
     .radio__visible {
-      border-radius: 5px;
+      border-radius: rem(5px);
 
       &::before {
-        background: url(../../../img/checkmark.svg) center center no-repeat;
+        background: url(../img/checkmark.svg) center center no-repeat;
       }
     }
   }
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include tablets {
+    margin-right: rem(31px);
+    margin-bottom: rem(5px);
+  }
+
+  @include phones {
+    margin-bottom: rem(10px);
   }
 }
 
@@ -30,18 +40,18 @@
 }
 
 .radio__visible {
-  height: 25px;
-  width: 25px;
+  height: rem(25px);
+  width: rem(25px);
   background-color: #fff;
   border-radius: 50%;
   position: relative;
-  margin-right: 8px;
+  margin-right: rem(8px);
 
   &::before {
-    content: '';
+    content: "";
     display: none;
-    height: 14px;
-    width: 14px;
+    height: rem(14px);
+    width: rem(14px);
     background: #fedb3f;
     border-radius: 50%;
     position: absolute;
@@ -50,4 +60,3 @@
     transform: translate(-50%, -50%);
   }
 }
-

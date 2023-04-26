@@ -1,17 +1,39 @@
 .reviews__display {
-  background-color: #F8FAF9;
-  padding: 42px 142px 42px 42px;
-  margin-bottom: 15px;
+  background-color: #f8faf9;
+  padding: rem(42px) rem(142px) rem(42px) rem(42px);
+  margin-bottom: rem(15px);
+
+  @include tablets {
+    padding: rem(60px) rem(30px) rem(40px);
+    margin-bottom: rem(25px);
+  }
 }
 
 .reviews__display-wrapper {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
-.reviews__avatar {  
-  width: 253px;
-  height: 264px;
+.reviews__avatar {
+  width: rem(253px);
+  height: rem(264px);
+
+  @include tablets {
+    width: rem(137px);
+    height: rem(137px);
+    margin-bottom: rem(35px);
+  }
+
+  @include phones {
+    width: rem(150px);
+    height: rem(150px);
+  }
 }
 
 .reviews__avatar-pic {
@@ -22,17 +44,33 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 40px;
+  margin-left: rem(40px);
+
+  @include tablets {
+    margin: 0;
+  }
 }
 .reviews__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
+
+  @include phones {
+    margin-bottom: rem(20px);
+  }
 }
 .reviews__text {
   color: #666;
   line-height: 1.2;
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
+
+  @include tablets {
+    margin-bottom: rem(18px);
+  }
+
+  @include phones {
+    margin-bottom: rem(20px);
+  }
 }
 .reviews__author {
   font-weight: 500;
@@ -42,13 +80,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
-  border: 6px solid transparent;
+  width: rem(85px);
+  height: rem(85px);
+  border: rem(6px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
 
@@ -57,13 +94,13 @@
   }
 }
 
-.interactive-avatar__link{
+.interactive-avatar__link {
   display: block;
   widows: 100%;
   height: 100%;
 }
 
-.interactive-avatar__icon{
+.interactive-avatar__icon {
   width: 100%;
   height: 100%;
   object-fit: cover;

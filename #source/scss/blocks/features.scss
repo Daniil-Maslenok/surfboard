@@ -1,5 +1,9 @@
 .features {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .features__item {
@@ -8,9 +12,9 @@
   position: relative;
 
   &:before {
-    content: url(../../../img/circles.png);
+    content: url(../img/circles.png);
     position: absolute;
-    top: 57px;
+    top: rem(57px);
     right: 0;
     transform: translateX(50%);
   }
@@ -25,18 +29,48 @@
       display: none;
     }
   }
+
+  @include tablets {
+    padding: 0 1%;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  @include phones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: rem(55px);
+    padding: 0 10% 0 0;
+
+    &:last-child {
+      padding-right: 10%;
+    }
+  }
 }
 
 .feature {
   text-align: center;
+
+  @include phones {
+    text-align: left;
+  }
+}
+
+.feature__image {
+  @include phones {
+    margin-right: rem(12px);
+  }
 }
 
 .feature__image-wrapper {
   display: inline-block;
   position: relative;
-  background-color: #F2F5F4;
-  height: 128px;
-  width: 128px;
+  background-color: #f2f5f4;
+  height: rem(128px);
+  width: rem(128px);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -46,26 +80,34 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 68px;
-  width: 68px;
+  height: rem(68px);
+  width: rem(68px);
 }
 
 .feature__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include phones {
+    align-items: flex-start;
+  }
 }
 
 .feature__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include phones {
+    margin-bottom: rem(20px);
+  }
 }
 
 .feature__text {
   color: #666;
   font-weight: 300;
-  width: 280px;
+  width: 100%;
   line-height: 1.2;
 }
