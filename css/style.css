@@ -817,8 +817,7 @@ a {
 }
 @media screen and (max-width: 480px) {
   .title-info {
-    margin-top: 23%;
-    margin-bottom: 3.6111111111rem;
+    margin-bottom: 15%;
   }
 }
 
@@ -905,11 +904,7 @@ a {
   }
   .features__item:last-child {
     padding-right: 4%;
-  }
-}
-@media screen and (max-width: 390px) {
-  .features__item {
-    margin-bottom: 2.5rem;
+    margin-bottom: 0;
   }
 }
 

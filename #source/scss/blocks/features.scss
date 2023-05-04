@@ -47,11 +47,8 @@
 
     &:last-child {
       padding-right: 4%;
+      margin-bottom: 0;
     }
-  }
-
-  @include phones-plus {
-    margin-bottom: rem(45px);
   }
 }
 
