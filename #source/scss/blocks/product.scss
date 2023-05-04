@@ -38,6 +38,11 @@
 
   @include tablets {
     width: 75%;
+    margin-left: 0;
+  }
+
+  @include phones {
+    width: 100%;
   }
 }
 

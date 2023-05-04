@@ -1077,6 +1077,12 @@ a {
 @media screen and (max-width: 768px) {
   .product__content {
     width: 75%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__content {
+    width: 100%;
   }
 }
 
