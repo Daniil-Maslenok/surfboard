@@ -6,10 +6,8 @@
   position: relative;
 
   @include tablets {
-    flex-direction: column-reverse;
-    &:hover .participant__avatar {
+    &:hover .participant__avatar--small-view {
       display: block;
-      margin-bottom: 0;
     }
     &:hover .participant__desc {
       display: block;
@@ -25,6 +23,13 @@
   @include tablets {
     display: none;
   }
+}
+
+.participant__avatar--small-view {
+  display: none;
+  width: rem(220px);
+  height: rem(290px);
+  margin-bottom: rem(20px);
 }
 
 .participant__avatar-pic {

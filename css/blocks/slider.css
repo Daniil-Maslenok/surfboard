@@ -1,0 +1,6 @@
+.slider--elem {
+  fill: #fff;
+}
+.slider--elem:hover {
+  opacity: 0.7;
+}

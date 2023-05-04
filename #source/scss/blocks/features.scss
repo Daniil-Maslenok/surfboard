@@ -43,11 +43,15 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: rem(55px);
-    padding: 0 10% 0 0;
+    padding: 0 4% 0 0;
 
     &:last-child {
-      padding-right: 10%;
+      padding-right: 4%;
     }
+  }
+
+  @include phones-plus {
+    margin-bottom: rem(45px);
   }
 }
 

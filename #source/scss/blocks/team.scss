@@ -1,14 +1,5 @@
 .team-section {
-  justify-content: flex-start;
-  padding-top: rem(65px);
-
-  @include tablets {
-    justify-content: center;
-  }
-
-  @include phones {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .team {

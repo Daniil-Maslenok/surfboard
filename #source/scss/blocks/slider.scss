@@ -1,0 +1,38 @@
+.slider {
+}
+
+.slider__elem {
+  fill: transparent;
+  width: rem(15px);
+  height: rem(27px);
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.slider--left {
+  @include tablets {
+    position: absolute;
+    top: 31%;
+    left: 17%;
+  }
+
+  @include phones {
+    top: 27%;
+    left: 1%;
+  }
+}
+
+.slider--right {
+  @include tablets {
+    position: absolute;
+    top: 31%;
+    right: 17%;
+  }
+
+  @include phones {
+    top: 27%;
+    right: 1%;
+  }
+}

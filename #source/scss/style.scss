@@ -29,6 +29,12 @@ $z-fixed-menu: 100;
 // fixed-menu
 @import "./blocks/fixed-menu.scss";
 
+// menu
+@import "./blocks/menu.scss";
+
+// overlay
+@import "./blocks/overlay.scss";
+
 // hero-section
 @import "./blocks/header.scss";
 
@@ -46,6 +52,11 @@ $z-fixed-menu: 100;
 // why-section
 @import "./blocks/title-info.scss";
 @import "./blocks/features.scss";
+
+// product-section
+@import "./blocks/slider.scss";
+@import "./blocks/product.scss";
+@import "./blocks/parameters.scss";
 
 // team-section
 @import "./blocks/team.scss";

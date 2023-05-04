@@ -102,7 +102,7 @@
                 </div>
               </div>
               <div class="feature__content">
-                <h3 class="feature__title">Perfect Fit</h3>
+                <h4 class="feature__title">Perfect Fit</h4>
                 <div class="feature__text">
                   <p>
                     Мы создаем доски по индивидуальным замерам. Мы учитываем при создании ваш
@@ -120,7 +120,7 @@
                 </div>
               </div>
               <div class="feature__content">
-                <h3 class="feature__title">Strong</h3>
+                <h4 class="feature__title">Strong</h4>
                 <div class="feature__text">
                   <p>
                     Мы используем только качественные и экологичные материалы. Ваша доска прослужит вам долгие годы.
@@ -137,7 +137,7 @@
                 </div>
               </div>
               <div class="feature__content">
-                <h3 class="feature__title">Unique</h3>
+                <h4 class="feature__title">Unique</h4>
                 <div class="feature__text">
                   <p>
                     Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну.
@@ -148,6 +148,48 @@
           </ul>
         </div>
       </section>
+      <section class="section section--bg--grey">
+        <div class="container product__container">
+          <a href="#" class="slider slider--left">
+            <svg class="slider__elem">
+              <use xlink:href=" ./img/sprite.svg#left-arrow"></use>
+            </svg>
+          </a>
+          <div class="product">
+            <img src="./img/board_1.png" alt="product-board" class="product__avatar">
+            <div class="product__content">
+              <a href="#" class="parameters">
+                <svg class="parameters__icon">
+                  <use xlink:href=" ./img/sprite.svg#char-arrows"></use>
+                </svg>
+                <span class="parameters__text">Параметры</span>
+              </a>
+              <h3 class="product__title">Лонгборд 2.0</h3>
+              <div class="product__desc">
+                <div class="product__text">
+                  <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать.
+                    Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая
+                    особых усилий ехать по ним. </p>
+                </div>
+                <ul class="sizes">
+                  <li class="sizes__item">Длина доски <span class="sizes__item--bold">от 2,5 метров</span></li>
+                  <li class="sizes__item">Ширина доски <span class="sizes__item--bold">от 40 сантиметров</span></li>
+                </ul>
+                <div class="commercial">
+                  <div class="commercial__price">7000 ₽</div>
+                  <a href="#" class="button">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="slider slider--right">
+            <svg class="slider__elem">
+              <use xlink:href=" ./img/sprite.svg#right-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
       <section class="section team-section">
         <div class="container">
           <h2 class="section__title team-section__title">Команда</h2>
@@ -164,12 +206,16 @@
                       <use xlink:href="./img/sprite.svg#triangle"></use>
                     </svg>
                   </div>
-                  <div class="participant__desc">
-                    <div class="participant__specialty">Главный технолог</div>
-                    <div class="participant__function">Отвечает за материалы и разработку досок</div>
+                  <div class="participant__avatar--small-view">
+                    <img src="./img/team/Boris.jpg" alt="beard-men" class="participant__avatar-pic">
+                  </div>
+                  <div class="participant__desc-wrapper">
+                    <div class="participant__desc">
+                      <div class="participant__specialty">Главный технолог</div>
+                      <div class="participant__function">Отвечает за материалы и разработку досок</div>
+                    </div>
                   </div>
                 </div>
-
               </li>
               <li class="team__item participant">
                 <div class="participant__avatar">
@@ -181,6 +227,9 @@
                     <svg class="participant__name--elem">
                       <use xlink:href="./img/sprite.svg#triangle"></use>
                     </svg>
+                  </div>
+                  <div class="participant__avatar--small-view">
+                    <img src="./img/team/Olga.jpg" alt="smile-women" class="participant__avatar-pic">
                   </div>
                   <div class="participant__desc-wrapper">
                     <div class="participant__desc">
@@ -200,6 +249,9 @@
                       <use xlink:href="./img/sprite.svg#triangle"></use>
                     </svg>
                   </div>
+                  <div class="participant__avatar--small-view">
+                    <img src="./img/team/Ingvar.jpg" alt="smile-men" class="participant__avatar-pic">
+                  </div>
                   <div class="participant__desc-wrapper">
                     <div class="participant__desc">
                       <div class="participant__specialty">Спортсмен</div>
@@ -218,6 +270,9 @@
                       <use xlink:href="./img/sprite.svg#triangle"></use>
                     </svg>
                   </div>
+                  <div class="participant__avatar--small-view">
+                    <img src="./img/team/Kate.jpg" alt="women" class="participant__avatar-pic">
+                  </div>
                   <div class="participant__desc-wrapper">
                     <div class="participant__desc">
                       <div class="participant__specialty">Тестировщик</div>
@@ -229,7 +284,6 @@
           </div>
         </div>
       </section>
-
       <section class="section">
         <div class="container">
           <h2 class="section__title reviews-section__title">Отзывы</h2>
@@ -240,7 +294,7 @@
                   <img src="./img/reviews/girl.png" alt="black hair girl" class="reviews__avatar-pic">
                 </div>
                 <article class="reviews__content">
-                  <h3 class="reviews__title">Лучший дизайн</h3>
+                  <h4 class="reviews__title">Лучший дизайн</h4>
                   <div class="reviews__text">
                     <p>
                       Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в
@@ -321,7 +375,7 @@
               </div>
               <div class="form__controls">
                 <label class="radio">
-                  <input type="radio" name="pay-option" class="radio__elem">
+                  <input type="radio" name="pay-option" class="radio__elem" checked>
                   <div class="radio__visible"></div>
                   <div class="radio__title">Оплата наличными</div>
                 </label>
@@ -346,6 +400,42 @@
           </form>
         </div>
       </section>
+    </div>
+    <div class="overlay">
+      <div class="container overlay-container">
+        <div class="overlay__link--wrapper">
+          <a class="overlay__link" href="#">
+            <svg class="overlay__close-elem">
+              <use xlink:href="./img/sprite.svg#cross"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="menu--overlay">
+          <ul class="menu__list--overlay">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Серфборды</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Команда</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Меню</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Как мы работаем</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
   <nav class="fixed-menu">
@@ -379,6 +469,8 @@
       </li>
     </ul>
   </nav>
+  <script src="./js/modal.js">
+  </script>
 </body>
 
 </html>
