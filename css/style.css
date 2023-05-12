@@ -990,7 +990,7 @@ a {
 }
 
 .product-slider__arrow {
-  background: url("../../../img/slider/arrow.svg") center center no-repeat;
+  background: url("../img/slider/arrow.svg") center center no-repeat;
   background-size: contain;
   display: block;
   width: 0.8333333333rem;
