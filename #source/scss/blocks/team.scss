@@ -10,15 +10,27 @@
   }
 }
 
-.team__list {
+.team {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
 
   @include tablets {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.team--desktop-version {
+  @include tablets {
+    display: none;
+  }
+}
+
+.team--mobile-version {
+  display: none;
+  @include tablets {
+    display: block;
   }
 }
 

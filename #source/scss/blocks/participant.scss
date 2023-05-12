@@ -15,43 +15,65 @@
   }
 }
 
-.participant__avatar {
-  width: rem(220px);
-  height: rem(290px);
-  margin-bottom: rem(20px);
-
+.active {
   @include tablets {
-    display: none;
+    padding-bottom: 1%;
   }
 }
 
-.participant__avatar--small-view {
-  display: none;
-  width: rem(220px);
-  height: rem(290px);
+.participant__avatar {
   margin-bottom: rem(20px);
+
+  // @include tablets {
+  //   display: none;
+  // }
 }
+
+// .participant__avatar--small-view {
+//   display: none;
+//   @include tablets {
+//     width: rem(220px);
+//     height: rem(290px);
+//     margin-bottom: rem(20px);
+//     height: 0;
+//     overflow: hidden;
+//   }
+// }
+
+// .participant__avatar--small-view--active {
+//   @include tablets {
+//     height: 100%;
+//     overflow: visible;
+//     display: block;
+//   }
+// }
 
 .participant__avatar-pic {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  @include tablets {
+    height: 50%;
+    width: 50%;
+  }
 }
 
-.participant__text-content {
+.participant__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   width: 100%;
+  transition: height 0.3s;
 
-  &:hover .participant__name--elem {
-    transform: rotate(180deg);
-  }
+  // &:hover .participant__name--elem {
+  //   transform: rotate(180deg);
+  // }
 
-  &:hover .participant__desc {
-    display: block;
-  }
+  // &:hover .participant__desc {
+  //   display: block;
+  // }
 }
 
 .participant__name-wrapper {
@@ -60,28 +82,51 @@
   justify-content: center;
   height: 100%;
   width: 100%;
-  margin-bottom: rem(8px);
 }
 
 .participant__name {
   font-size: rem(21px);
   font-weight: 700;
   background-color: transparent;
+  margin-bottom: rem(8px);
+
+  &::after {
+    content: "";
+    margin-left: rem(4px);
+    width: rem(9px);
+    height: rem(9px);
+    display: inline-block;
+    background: url(../img/team/triangle.svg) center center no-repeat;
+  }
+}
+
+.participant__name--active {
+  &:after {
+    transform: rotate(180deg);
+  }
 }
 
 .participant__name--elem {
-  width: rem(9px);
-  height: rem(9px);
   margin-left: rem(4px);
 }
 
+.participant__content {
+  height: 0;
+  overflow: hidden;
+}
+
+.team--desktop-version .participant__content {
+  position: absolute;
+  top: 100%;
+}
+
 .participant__desc {
-  display: none;
+  // display: none;
   font-size: rem(18px);
-  margin-bottom: 10%;
+  // margin-bottom: 10%;
 
   @include tablets {
-    margin-bottom: 3%;
+    // margin-bottom: 3%;
   }
 }
 
