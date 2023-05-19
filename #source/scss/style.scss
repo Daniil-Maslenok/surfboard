@@ -57,15 +57,26 @@ $z-fixed-menu: 100;
 @import "./blocks/slider.scss";
 @import "./blocks/product.scss";
 @import "./blocks/parameters.scss";
+@import "./blocks/dropdown.scss";
 
 // team-section
 @import "./blocks/team.scss";
 @import "./blocks/participant.scss";
 
+// product-menu-section
+@import "./blocks/product-menu.scss";
+
 // reviews-section
 @import "./blocks/reviews.scss";
+
+// player-section
+@import "./blocks/player.scss";
 
 // order-section
 @import "./blocks/form.scss";
 @import "./blocks/radio.scss";
 @import "./blocks/modal-form.scss";
+
+// map-footer
+@import "./blocks/map-footer.scss";
+@import "./blocks/socials.scss";

@@ -24,7 +24,7 @@
   }
 
   &--slider-left {
-    left: -2%;
+    left: 1%;
     @include tablets {
       top: 31%;
       left: 17%;
@@ -37,7 +37,7 @@
   }
 
   &--slider-right {
-    right: -2%;
+    right: 1%;
     transform: rotate(180deg);
     @include tablets {
       top: 31%;
