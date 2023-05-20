@@ -2,8 +2,6 @@ let player;
 let windowHeight = $(window).width();
 const player__elem = $(".player__elem");
 
-console.log(windowHeight);
-
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('yt-player', {
     height: '400',

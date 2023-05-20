@@ -1,0 +1,11 @@
+.socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials__icon {
+  height: rem(20px);
+  width: rem(20px);
+  fill: #b3b3b3;
+}
