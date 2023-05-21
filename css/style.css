@@ -583,7 +583,8 @@ a {
 }
 
 .hero {
-  background: url(../img/men.png) top center no-repeat;
+  background: linear-gradient(rgba(70, 116, 255, 0.2), rgba(70, 116, 255, 0.2)),
+    url(../img/men.png) top center no-repeat;
   background-size: cover;
   height: 100%;
   min-height: 36.1111111111rem;
