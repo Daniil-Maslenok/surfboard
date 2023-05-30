@@ -1,5 +1,5 @@
 let player;
-let windowHeight = $(window).width();
+let windowWidth = $(window).width();
 const player__elem = $(".player__elem");
 
 function onYouTubeIframeAPIReady() {
@@ -19,14 +19,14 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-if (windowHeight <= 747) {
+if (windowWidth <= 768) {
 
   player__elem.css("width", "480px");
   player__elem.css("height", "350px");
 
 }
 
-if (windowHeight <= 480) {
+if (windowWidth <= 480) {
   player__elem.css("width", "320px");
   player__elem.css("height", "200px");
 }

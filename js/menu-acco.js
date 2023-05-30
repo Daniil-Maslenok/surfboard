@@ -3,7 +3,7 @@ const resultWidth = item => {
   const screenWidth = $(window).width();
   const container = item.closest(".product-menu");
   const titlesBlocks = container.find(".product-menu__title");
-  const titlesWIdth = titlesBlocks.width() * titlesBlocks.length;
+  const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
 
   const textContainer = item.find(".product-menu__container");
   const paddingLeft = parseInt(textContainer.css("padding-left"));
@@ -12,7 +12,10 @@ const resultWidth = item => {
   const mobileVer = window.matchMedia("(max-width: 768px)").matches;
 
   if (mobileVer) {
-    reqItemWidth = screenWidth - titlesWIdth;
+    reqItemWidth = screenWidth - titlesWidth;
+    // if (screenWidth <= 768) {
+    //   reqItemWidth = screenWidth;
+    // }
   } else {
     reqItemWidth = 500;
   };

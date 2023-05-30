@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.active {
+.participant .active {
   @include tablets {
     padding-bottom: 1%;
   }

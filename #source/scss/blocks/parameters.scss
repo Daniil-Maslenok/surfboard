@@ -1,11 +1,9 @@
 .parameters--wrapper {
-  display: flex;
-  position: relative;
+  display: inline-flex;
 }
 
 .parameters {
   background: #3a587e;
-  position: relative;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -22,12 +20,14 @@
 }
 
 .parameters--wrapper:hover .dropdown-info {
-  display: block;
+  display: flex;
   opacity: 1;
   right: 0;
+  left: rem(101px);
+  justify-content: center;
 }
 .parameters--wrapper:hover .dropdown-info::before {
-  right: 0px;
+  right: 0;
 }
 
 .parameters__icon {
@@ -37,5 +37,6 @@
 }
 
 .parameters__text {
+  text-align: left;
   margin-top: rem(5px);
 }

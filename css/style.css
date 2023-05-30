@@ -583,8 +583,7 @@ a {
 }
 
 .hero {
-  background: linear-gradient(rgba(70, 116, 255, 0.2), rgba(70, 116, 255, 0.2)),
-    url(../img/men.png) top center no-repeat;
+  background: url(../img/men.png) top center no-repeat;
   background-size: cover;
   height: 100%;
   min-height: 36.1111111111rem;
@@ -1293,15 +1292,13 @@ a {
 }
 
 .parameters--wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .parameters {
   background: #3a587e;
-  position: relative;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1328,13 +1325,19 @@ a {
 }
 
 .parameters--wrapper:hover .dropdown-info {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 1;
   right: 0;
+  left: 5.6111111111rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .parameters--wrapper:hover .dropdown-info::before {
-  right: 0px;
+  right: 0;
 }
 
 .parameters__icon {
@@ -1344,27 +1347,27 @@ a {
 }
 
 .parameters__text {
+  text-align: left;
   margin-top: 0.2777777778rem;
 }
 
 .dropdown-info {
-  display: none;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   position: absolute;
-  left: 5.1666666667rem;
-  right: 3000px;
+  right: -500rem;
   opacity: 0;
-  -webkit-transition: opacity 3.3s;
-  transition: opacity 3.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  max-width: 15.5555555556rem;
 }
 .dropdown-info::before {
   content: "";
   display: block;
-  min-height: 11.9444444444rem;
-  min-width: 17.7777777778rem;
+  min-height: 100%;
+  min-width: 116%;
   top: 0;
-  right: 166.6666666667rem;
+  right: -166.6666666667rem;
   position: absolute;
 }
 
@@ -1376,7 +1379,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.1111111111rem 0.7777777778rem;
+  padding: 8% 5%;
 }
 
 .dropdown-info__item {
@@ -1391,15 +1394,32 @@ a {
           align-items: center;
   text-align: center;
   min-height: 2.4444444444rem;
-  margin-bottom: 0.4444444444rem;
 }
 .dropdown-info__item:last-child {
   margin-bottom: 0;
 }
 
-.dropdown-info__icon {
+.parameter {
+  margin: 0 0.1111111111rem 0.4444444444rem 0;
+}
+
+.parameter__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parameter__icon {
   height: 1.7777777778rem;
   width: 1.7777777778rem;
+}
+
+.parameter__text {
+  font-weight: 500;
+  margin: 0 0.8333333333rem;
 }
 
 .team-section {
@@ -1493,7 +1513,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .active {
+  .participant .active {
     padding-bottom: 1%;
   }
 }

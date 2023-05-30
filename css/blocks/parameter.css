@@ -1,0 +1,22 @@
+.parameter {
+  margin: 0 rem(2px) rem(8px) 0;
+}
+
+.parameter__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parameter__icon {
+  height: rem(32px);
+  width: rem(32px);
+}
+
+.parameter__text {
+  font-weight: 500;
+  margin: 0 rem(15px);
+}
